@@ -1,0 +1,28 @@
+<p>Listado de heroes</p>
+
+<!-- *ngIf="variable también sirve como condición. Toma como False si variable está vacío, es null, false o undefined. -->
+
+<div *ngIf="variable.length>=1; else noBorrado">
+    <h4>Último heroe eliminado <small>{{variable}}</small></h4>
+</div>
+
+<!-- El # sirve para hacer referencias locales. Coso exclusivo de HTML, no de ts. -->
+<ng-template #noBorrado>
+    <h4>No se ha borrado nada</h4>
+</ng-template>
+
+<ul>
+    <!-- <li>{{heroes[0]}}</li>
+    <li>{{heroes[1]}}</li>
+    <li>{{heroes[2]}}</li>
+    <li>{{heroes[3]}}</li>
+    <li>{{heroes[4]}}</li> -->
+
+    <li *ngFor="let heroe of heroes; let i = index">
+        <!-- {{i + " "+ heroe}} -->
+        {{i + 1}} - {{ heroe}}
+    </li>
+</ul>
+
+
+<button (click)= 'borrarHeroe()'> Borrar Heroe</button>

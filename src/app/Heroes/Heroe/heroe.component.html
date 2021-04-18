@@ -1,0 +1,20 @@
+
+<h1>{{ alterEgo}}</h1>
+
+<dl> {{alterEgo}}</dl>
+
+    <dt>Nombre real</dt>
+    <dd> {{getnombreReal}}</dd>
+
+    <dt> Edad: </dt>
+    <dd> {{edad}}</dd>
+
+
+<button (click)= 'cambiarNombreHeroe()'> Cambiar héroe </button>
+<button (click)= 'cambiarEdad()'> Cambiar edad  </button>
+
+    <!-- <dd> Nombre </dd>
+    <dd> {{getnombreReal().toUpperCase()}} </dd> -->
+
+    <!-- La diferencia entre invocar un get y una función es que la función invocada lleva parentesis con el nombre -->
+    <!-- Suele trabajarse con el click y la invocación de funciones pero sin un imput de intermediario, por buenas prácticas. Aunque lo haré de todas formas en Taller. -->

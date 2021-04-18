@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Contador App';
+export class AppComponent 
+{
+  
 
-  numero: number= 10;
 }
